@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Vendor Application"
+            android:textColor="@color/orangecolor"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/profile"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/user" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/whiterose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_constraintVertical_bias="0.327"
+        tools:ignore="MissingConstraints">
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:paddingLeft="15dp"-->
+        <!--            android:paddingRight="10dp"-->
+        <!--            android:paddingTop="15dp"-->
+        <!--            android:paddingBottom="10dp">-->
+
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:id="@+id/wallet"-->
+        <!--                android:layout_width="140dp"-->
+        <!--                android:layout_height="130dp"-->
+        <!--                android:backgroundTint="#EEFEFB"-->
+        <!--                android:clickable="true"-->
+        <!--                app:cardCornerRadius="30dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="105dp"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:layout_gravity="left|bottom"-->
+        <!--                    android:layout_marginBottom="30dp"-->
+        <!--                    android:padding="10dp"-->
+        <!--                    android:scaleType="fitXY"-->
+        <!--                    android:src="@drawable/wallet" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center|right"-->
+        <!--                    android:layout_marginTop="47dp"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:text="Wallet"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:textSize="18sp"-->
+        <!--                    android:textStyle="bold" />-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                android:id="@+id/cash"-->
+        <!--                android:layout_width="140dp"-->
+        <!--                android:layout_height="130dp"-->
+        <!--                android:layout_marginLeft="45dp"-->
+        <!--                android:backgroundTint="#FAE8FC"-->
+        <!--                android:clickable="true"-->
+        <!--                app:cardCornerRadius="30dp">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="105dp"-->
+        <!--                    android:layout_height="105dp"-->
+        <!--                    android:layout_gravity="left|bottom"-->
+        <!--                    android:layout_marginTop="30dp"-->
+        <!--                    android:padding="10dp"-->
+        <!--                    android:scaleType="fitXY"-->
+        <!--                    android:src="@drawable/complain" />-->
+
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_gravity="center|right"-->
+        <!--                    android:layout_marginRight="10dp"-->
+        <!--                    android:layout_marginBottom="40dp"-->
+        <!--                    android:text="Complaint"-->
+        <!--                    android:textColor="@color/black"-->
+        <!--                    android:textSize="18sp"-->
+        <!--                    android:textStyle="bold" />-->
+        <!--            </androidx.cardview.widget.CardView>-->
+
+
+        <!--        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/managestock"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:backgroundTint="#FFEFD5"
+                android:clickable="true"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/graph" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="Manage Stock"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/porders"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#FFDDE4"
+                android:clickable="true"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="30dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/orderl" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Product List"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/complain"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#D2FFCC"
+                android:clickable="true"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="28dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/complaint" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="43dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Complaint"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/orderhis"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#ccfffd"
+                android:clickable="true"
+                app:cardCornerRadius="30dp">
+
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ohistory" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:text="Order History"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orangecolor"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

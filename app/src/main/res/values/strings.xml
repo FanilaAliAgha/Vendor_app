@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">vender</string>
+
+
+    <string-array name="sub">
+
+        <item>--/Select/--</item>
+        <item>It is too late</item>
+        <item>I do not need it</item>
+        <item>Quality is not upto my requirement</item>
+        <item>It was done by mistake</item>
+        <item>Behavior</item>
+
+
+    </string-array>
+</resources>
